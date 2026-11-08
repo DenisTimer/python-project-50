@@ -22,10 +22,13 @@ cd python-project-50
 
 ## Использование
 
-Демонстрация сравнения двух JSON-файлов в Asciinema
-Запускается с помощью команды:
+Из корня проекта запускается командой:
+
+```bash
 uv run gendiff raw-data/file1.json raw-data/file2.json
-[![Демонстрация сравнения двух JSON-файлов](https://asciinema.org/a/bu7fYurpW4DXqD0e.svg)](https://asciinema.org/a/bu7fYurpW4DXqD0e)
+```
+
+[Посмотреть демонстрацию в Asciinema](https://asciinema.org/a/bu7fYurpW4DXqD0e)
 
 ---
 
