@@ -1,9 +1,4 @@
-import json
-
-
-def read_json(path):
-    with open(path, encoding="utf-8") as file:
-        return json.load(file)
+from .parser import read_data
 
 
 def format_value(value):
@@ -15,8 +10,8 @@ def format_value(value):
 
 
 def generate_diff(first_path, second_path):
-    first_data = read_json(first_path)
-    second_data = read_json(second_path)
+    first_data = read_data(first_path)
+    second_data = read_data(second_path)
 
     keys = sorted(first_data.keys() | second_data.keys())
     lines = ['{']

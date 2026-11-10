@@ -23,13 +23,25 @@ cd python-project-50
 
 ## Использование
 
-Из корня проекта запускается командой:
+`gendiff` сравнивает два конфигурационных файла и показывает, какие параметры добавились, удалились или изменились. Поддерживаются JSON (`.json`) и YAML (`.yaml`, `.yml`).
+
+Запускать команды из корня проекта.
+
+### Сравнение JSON
 
 ```bash
 uv run gendiff tests/test_data/file1.json tests/test_data/file2.json
 ```
 
-[Посмотреть демонстрацию в Asciinema](https://asciinema.org/a/bu7fYurpW4DXqD0e)
+[Посмотреть демонстрацию сравнения JSON](https://asciinema.org/a/bu7fYurpW4DXqD0e)
+
+### Сравнение YAML
+
+```bash
+uv run gendiff tests/test_data/file1.yml tests/test_data/file2.yml
+```
+
+[Посмотреть демонстрацию сравнения YAML](https://asciinema.org/a/MvGkkqArqiSaSiju)
 
 ---
 
