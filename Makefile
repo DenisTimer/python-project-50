@@ -1,7 +1,7 @@
 .PHONY: demo lint build
 
 demo:
-	uv run gendiff raw-data/file1.json raw-data/file2.json
+	uv run gendiff tests/test_data/file1.json tests/test_data/file2.json
 
 lint:
 	uv run ruff check gendiff
