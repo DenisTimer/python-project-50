@@ -8,3 +8,6 @@ lint:
 
 build:
 	uv build
+
+test-coverage:
+	uv run pytest --cov=gendiff

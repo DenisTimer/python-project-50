@@ -25,7 +25,7 @@ cd python-project-50
 Из корня проекта запускается командой:
 
 ```bash
-uv run gendiff raw-data/file1.json raw-data/file2.json
+uv run gendiff tests/test_data/file1.json tests/test_data/file2.json
 ```
 
 [Посмотреть демонстрацию в Asciinema](https://asciinema.org/a/bu7fYurpW4DXqD0e)
